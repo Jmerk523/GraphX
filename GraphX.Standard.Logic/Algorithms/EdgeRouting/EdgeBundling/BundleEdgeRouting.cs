@@ -27,7 +27,7 @@ namespace GraphX.Logic.Algorithms.EdgeRouting
     /// Adapted for GraphX by PantheR.
     /// </summary>
     public class BundleEdgeRouting<TVertex, TEdge, TGraph> : EdgeRoutingAlgorithmBase<TVertex, TEdge, TGraph>
-        where TGraph : class, IMutableBidirectionalGraph<TVertex, TEdge>
+        where TGraph : class, IBidirectionalGraph<TVertex, TEdge>
         where TEdge : class, IGraphXEdge<TVertex>
         where TVertex : class, IGraphXVertex
     {
