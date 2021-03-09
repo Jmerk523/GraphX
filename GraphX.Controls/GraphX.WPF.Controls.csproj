@@ -184,13 +184,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\GraphX.Standard.Common\GraphX.Standard.Common.csproj">
       <Project>{a03c3866-8f38-4f1d-8d08-6b187f418d51}</Project>
       <Name>GraphX.Standard.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="YC.QuickGraph">
+      <Version>3.7.4</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
